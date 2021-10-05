@@ -1,0 +1,71 @@
+<mvc:View xmlns:cards="sap.f.cards"
+  controllerName="queroquerons.logon.controller.Login"
+  xmlns:mvc="sap.ui.core.mvc"
+  displayBlock="true"
+  xmlns="sap.m">
+  <Shell id="shell">
+    <App >
+      <Page title="Portal Despesas Lojas Quero-Quero"
+        
+        enableScrolling="false">
+
+        <!-- class="w3-backGround" -->
+
+        <content>
+
+          <!-- <VBox justifyContent="Center"
+            alignItems="Center"
+            alignContent="Center"> -->
+
+            
+
+          <!-- </VBox> -->
+
+          <VBox fitContainer="true"
+            justifyContent="Center"
+            alignItems="Center"
+            alignContent="Center">
+
+            <items>
+
+              <!-- <Image src="./css/logo.jpg"/> -->
+
+              <Input id="uid"
+                placeholder="User ID"
+                submit="onLoginTap"></Input>
+
+              <Input id="pasw"
+                placeholder="Password"
+                type="Password"
+                submit="onLoginTap"></Input>
+
+              <Button width="12rem"
+                text="Login"
+                type="Emphasized"
+                press="onLoginTap"></Button>
+
+            </items>
+          </VBox>
+
+          <VBox></VBox>
+        </content>
+
+
+        <footer >
+          <Bar>
+
+            <contentLeft>
+            
+            </contentLeft>
+            <contentRight>
+              
+            </contentRight>
+
+
+          </Bar>
+
+        </footer>
+      </Page>
+    </App>
+  </Shell>
+</mvc:View>
